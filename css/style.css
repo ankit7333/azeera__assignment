@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600&display=swap');
+*{
+    box-sizing:border-box;
+    outline:medium none;
+    text-decoration:none;
+    margin:0;
+    padding:0;
+}  
+img{
+    max-width:100%;
+    border:0;
+    vertical-align:middle;
+    width:100%;
+    height:100%;
+}
+a{
+    text-decoration:none;
+    border:0;
+    outline:none;
+    cursor:pointer;
+}
+a:hover, a:active, a:visited, a:focus{
+    text-decoration:none;
+    outline:0 none;
+}
+ul, ol, li, fieldset{
+    list-style:none;
+    margin:0;
+    padding:0;
+    background:none;
+    border:0;
+}
+body{
+    margin:0 auto;
+    -webkit-overflow-scrolling:touch;
+    touch-action:manipulation;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+}
+body, input, textarea, select, button{
+    text-rendering:optimizeSpeed;
+    font-family:'Mulish', sans-serif;
+    -webkit-tap-highlight-color:transparent;
+    font-size:14px;
+}
+/* icon css */
+.icon{
+    width:20px;
+    height:20px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+}
+.icon--livechat{
+    background-image:url(https://www.azeera.com/public/new-menu/theme/default/image/header/chat-bubble.svg);
+}
+.icon--emailus{
+    background-image:url(https://www.azeera.com/public/new-menu/theme/default/image/header/email.svg);
+}
+/* header css */
+.header__top{
+    background-color:#596682;
+}
+.social a:hover .text-white{
+    color:#d1af6a !important;
+}
+/* sale css */
+.sale__right{
+    width:13rem;
+}
+.social li:not(:last-child){
+    margin-right:1rem;
+}
+/* nav css */
+.custom__nav .nav-link{
+    color:#596682;
+    display:flex;
+    align-items:center;
+    font-size:15px;
+}
+.custom__nav .nav-link::after{
+    background-image:url(https://www.azeera.com/public/new-menu/theme/default/image/header/chevron-errow-down.svg);
+    border:none;
+    margin:0;
+    padding:0;
+    width:10px;
+    height:16px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:100%;
+    margin-left:.5rem;
+}
+@media (min-width:992px){
+    .custom__nav .nav-link:not(:last-child){
+        margin-right:1rem;
+    }
+    .custom__nav .container-fluid{
+        padding:0;
+    }
+    .social li:not(:last-child){
+        margin-right:2rem;
+    }
+}
+@media (max-width:767.98px){
+    .custom__nav{
+        width:100%;
+    }
+}
